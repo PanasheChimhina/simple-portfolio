@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    line-height: 1.8;
+    /* background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; */
+    
+ 
+}
+
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    transform-style: preserve-3d;
+    z-index: -1;
+  
+}
+.intro{
+    width: 80%;
+    margin: auto;
+    min-width: 767px;
+    font-size: larger;
+}
+.intro-container, .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    transform: translateZ(-10px) scale(2.5);
+}
+
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+margin: auto;
+}
+h1{
+    text-align: center;
+    margin: 5px auto;
+}
+
+section {
+ 
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    /* border: 1px dashed red; */
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+}
+.collapse{
+    display: flex;
+    flex-direction: row;
+    
+}
+.columns{
+    width: 55%;
+    margin: auto;
+    /* border: 1px dashed green; */
+}
+.cont{
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+.end-single{
+    display: block;
+    width: 100%;
+    max-width: 10vw;
+    margin: 4rem auto;
+    border-top: 3px solid #6B3DE4;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto
+}
+
+ion-icon {
+    margin-top: 10px 0px;
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+   
+}
+
+ion-icon:hover {
+    transform: rotate(25deg) scale(1.3);
+}
